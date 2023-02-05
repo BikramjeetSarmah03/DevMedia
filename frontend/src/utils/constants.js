@@ -1,5 +1,5 @@
-export const SOCKET_ENDPOINT = "http://localhost:4000";
-// export const SOCKET_ENDPOINT = "https://devmedia-server2.onrender.com";
+// export const SOCKET_ENDPOINT = "http://localhost:4000";
+export const SOCKET_ENDPOINT = "https://devmedia-server.onrender.com";
 
 export const stories = [
   {
