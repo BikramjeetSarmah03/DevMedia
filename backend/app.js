@@ -10,11 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(fileUpload());
-app.use(
-  cors({
-    origin: "*",
-  })
-);
+app.use(cors());
 
 if (process.env.NODE_ENV != "production") {
   require("dotenv").config({ path: "config/config.env" });
