@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import InfiniteScroll from "react-infinite-scroll-component";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import {
@@ -11,12 +12,10 @@ import {
   POST_FOLLOWING_RESET,
   SAVE_UNSAVE_POST_RESET,
 } from "../../redux/constants/postConstants";
+import SkeletonPost from "../Layouts/SkeletonPost";
+import SpinLoader from "../Layouts/SpinLoader";
 import UsersDialog from "../Layouts/UsersDialog";
 import PostItem from "./PostItem";
-import StoriesContainer from "./StoriesContainer";
-import InfiniteScroll from "react-infinite-scroll-component";
-import SpinLoader from "../Layouts/SpinLoader";
-import SkeletonPost from "../Layouts/SkeletonPost";
 
 const PostsContainer = () => {
   const dispatch = useDispatch();
