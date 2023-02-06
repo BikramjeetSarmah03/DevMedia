@@ -12,7 +12,7 @@ app.use(cookieParser());
 app.use(fileUpload());
 app.use(
   cors({
-    origin: "https://devmedia-frontend.onrender.com/",
+    origin: "*",
   })
 );
 
