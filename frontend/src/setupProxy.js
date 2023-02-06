@@ -5,6 +5,7 @@ module.exports = function (app) {
     "/api",
     createProxyMiddleware({
       target: "https://devmedia-server.onrender.com",
+      // target: "http://localhost:4000",
       changeOrigin: true,
     })
   );
